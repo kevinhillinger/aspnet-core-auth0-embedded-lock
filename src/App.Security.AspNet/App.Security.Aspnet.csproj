@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+
+  <ItemGroup>
+    <PackageReference Include="autofac" Version="4.6.1" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.AzureStorage" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\App.Security\App.Security.csproj" />
+  </ItemGroup>
+
+</Project>
